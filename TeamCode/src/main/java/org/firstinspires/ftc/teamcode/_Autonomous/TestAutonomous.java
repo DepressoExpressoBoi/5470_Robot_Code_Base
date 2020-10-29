@@ -92,6 +92,7 @@ MagTrigger.setPosition(0);
         sleep(500);
         BRW.setPower(.75);
         sleep(200);
+        BRW.setPower(0);
 
         MagTrigger.setPosition(0.5);
         sleep(500);
@@ -100,6 +101,7 @@ MagTrigger.setPosition(0);
         MagLift.setPosition(.13);
         BRW.setPower(.75);
         sleep(200);
+        BRW.setPower(0);
 
 
         MagTrigger.setPosition(0.5);
@@ -108,6 +110,7 @@ MagTrigger.setPosition(0);
         sleep(500);
         BRW.setPower(.75);
         sleep(200);
+        BRW.setPower(0);
 
         MagTrigger.setPosition(0.5);
         sleep(500);
@@ -115,6 +118,7 @@ MagTrigger.setPosition(0);
         sleep(500);
         BRW.setPower(-0.75);
         sleep(1000);
+        BRW.setPower(0);
 
 
 
