@@ -64,7 +64,7 @@ public class TestAutonomous extends LinearOpMode {
         FRW.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         BRW.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-MagTrigger.setPosition(0);
+        MagTrigger.setPosition(0);
         Claw.setPosition(.5);
         waitForStart();
 
@@ -75,16 +75,16 @@ MagTrigger.setPosition(0);
         sleep(1000);
         */
         //Arm.setPower(-0.75);
-//sleep(1000);
+        //sleep(1000);
         Shooter.setPower(1);
         sleep(2000);
 
 
-         MagLift.setPosition(.127);
-         MagTrigger.setPosition(0.5);
-         sleep(500);
-         MagTrigger.setPosition(0.30);
-         sleep(500);
+        MagLift.setPosition(.127);
+        MagTrigger.setPosition(0.5);
+        sleep(500);
+        MagTrigger.setPosition(0.30);
+        sleep(500);
 
         MagTrigger.setPosition(0.5);
         sleep(500);
@@ -126,8 +126,6 @@ MagTrigger.setPosition(0);
     public void driveForward(double speed, double dist, double timeout) {
         encoderDrive(speed, dist, dist, timeout);
     }
-
-
 
 
     public void encoderDrive(double speed, double distL, double distR, double timeoutS) {
