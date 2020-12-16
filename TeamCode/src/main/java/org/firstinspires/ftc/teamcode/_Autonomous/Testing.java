@@ -18,7 +18,7 @@ public class Testing extends LinearOpMode {
                 .strafeRight(25)
                 .build();
 
-        Trajectory traj2 = drive.trajectoryBuilder(new Pose2d())
+        Trajectory traj2 = drive.trajectoryBuilder(traj1.end())
                 .forward(25)
                 .build();
 
@@ -26,6 +26,7 @@ public class Testing extends LinearOpMode {
 
         if(isStopRequested()) return;
 
+        //Follow Both Trajectories
         drive.followTrajectory(traj1);
         drive.followTrajectory(traj2);
     }
