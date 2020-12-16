@@ -14,15 +14,19 @@ public class Testing extends LinearOpMode {
     public void runOpMode() {
         SampleMecanumDrive drive = new SampleMecanumDrive(hardwareMap);
 
-        Trajectory myTrajectory = drive.trajectoryBuilder(new Pose2d())
-        .strafeRight(10)
-        .forward(5)
-        .build();
+        Trajectory traj1 = drive.trajectoryBuilder(new Pose2d())
+                .strafeRight(10)
+                .build();
+
+        Trajectory traj2 = drive.trajectoryBuilder(new Pose2d())
+                .forward(10)
+                .build();
 
         waitForStart();
 
         if(isStopRequested()) return;
 
-        drive.followTrajectory(myTrajectory);
+        drive.followTrajectory(traj1);
+        drive.followTrajectory(traj2);
     }
 }
